@@ -4,7 +4,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-import Header from "@/components/fixed/Header"
+import Navbar from "@/components/fixed/Header"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
 		<html lang="en">
 			<body className={inter.className}>
-				<Header/>
+				<Navbar/>
 				{children}
 			</body>
 		</html>

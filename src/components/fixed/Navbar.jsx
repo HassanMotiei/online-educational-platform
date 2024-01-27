@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Header = () => {
+const Navbar = () => {
     return (
         <div className="navbar bg-base-100 border-b min-h-24">
             <div className="flex flex-1">
@@ -104,4 +104,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Navbar
