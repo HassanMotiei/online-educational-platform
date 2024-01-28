@@ -4,7 +4,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-import Navbar from "@/components/fixed/Header"
+import Navbar from "@/components/fixed/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={`${inter.className} mx-5`}>
 				<Navbar/>
 				{children}
 			</body>

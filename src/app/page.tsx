@@ -1,9 +1,13 @@
-import Image from "next/image";
+import Header from "@/components/main/Header";
+import LatestCourses from "@/components/main/LatestCourses";
+import RoadMap from "@/components/main/RoadMap";
 
 export default function Home() {
   return (
-    <main>
-      Hassan Motiei
-    </main>
+		<main>
+			<Header />
+			<LatestCourses />
+			<RoadMap />
+		</main>
   );
 }
