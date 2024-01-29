@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const LatestCoursesCard = () => {
+const MostPopularCoursesCard = () => {
 	return (
 		<div className="card card-compact w-[18.5rem] bg-base-100 shadow-xl m-2.5">
 			<figure>
@@ -38,4 +38,4 @@ const LatestCoursesCard = () => {
 	);
 };
 
-export default LatestCoursesCard;
+export default MostPopularCoursesCard;

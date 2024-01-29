@@ -7,18 +7,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
-import LatestCoursesCard from "./LatestCoursesCard";
+import PreSaleCard from "./PreSaleCard";
 
-export default function SwiperCarousel() {
+export default function PreSale() {
 	return (
 		<div className="mt-24">
 			<div>
-				<p className="text-2xl">How can we help you?</p>
-				<p className="text-xl">
-					Since the Sabzleran educational academy is a private academy
-				</p>
+				<p className="text-2xl">Pre-sale</p>
+				<p className="text-xl">Courses to be held</p>
 			</div>
 			<Swiper
 				className="w-full h-full mt-10"
@@ -42,35 +40,34 @@ export default function SwiperCarousel() {
 						spaceBetween: 20,
 					},
 				}}
-				navigation={true}
-				modules={[Autoplay, Navigation]}
+				modules={[Autoplay]}
 			>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<PreSaleCard />
 				</SwiperSlide>
 			</Swiper>
 		</div>
