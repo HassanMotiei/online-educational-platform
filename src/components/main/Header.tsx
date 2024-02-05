@@ -5,9 +5,6 @@ const Header = () => {
 	return (
 		<div className="flex justify-between items-center mt-24">
 			<div>
-				<Link href="/" className="btn mb-10">
-					button
-				</Link>
 				<div className="mb-10">
 					<p className="text-5xl font-bold mb-5">We at any cost</p>
 					<p className="text-5xl font-bold mb-7">
@@ -19,17 +16,17 @@ const Header = () => {
 					</p>
 				</div>
 				<div className="flex gap-2">
-					<Link href="/" className="btn">
-						button
+					<Link href="/" className="btn btn-neutral text-xl">
+						Start here
 					</Link>
-					<Link href="/" className="btn">
-						button
+					<Link href="/" className="btn text-xl">
+						who are we ?
 					</Link>
 				</div>
 			</div>
 			<div>
 				<Image
-					src={"/images/Header/boy.png"}
+					src={"/images/header/boy.png"}
 					width={577}
 					height={612}
 					alt={"Header Image"}

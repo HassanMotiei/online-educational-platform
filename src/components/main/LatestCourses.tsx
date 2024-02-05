@@ -9,15 +9,15 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 
-import LatestCoursesCard from "./LatestCoursesCard";
+import Card from "./Card";
 
 export default function SwiperCarousel() {
 	return (
 		<div className="mt-24">
 			<div>
-				<p className="text-2xl">How can we help you?</p>
+				<p className="text-2xl">Latest Courses</p>
 				<p className="text-xl">
-					Since the Sabzleran educational academy is a private academy
+					Learning and personal development growth
 				</p>
 			</div>
 			<Swiper
@@ -46,31 +46,31 @@ export default function SwiperCarousel() {
 				modules={[Autoplay, Navigation]}
 			>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<LatestCoursesCard />
+					<Card />
 				</SwiperSlide>
 			</Swiper>
 		</div>

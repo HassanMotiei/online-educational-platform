@@ -1,98 +1,61 @@
+"use client";
 import Link from "next/link";
+import React, { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import Image from "next/image";
+
 // import {AlgoliaSearch} from "./AlgoliaSearch";
 
 const Navbar = () => {
+	const [isHovered, setIsHovered] = useState(false);
+
 	return (
 		<div className="navbar bg-base-100 min-h-24">
 			<div className="flex-1">
-				<Link href="/" className="btn btn-ghost text-xl">
-					daisyUI
+				<Link href="/">
+					<Image
+						src={"/images/navbar/logo.png"}
+						alt="Logo"
+						width={80}
+						height={40}
+					/>
 				</Link>
-				<ul className="menu menu-horizontal px-1">
-					<li>
-						<details>
-							<summary>Parent 1</summary>
-							<ul className="p-2">
-								<li>
-									<a>Submenu 1</a>
-								</li>
-								<li>
-									<a>Submenu 2</a>
-								</li>
-							</ul>
-						</details>
-					</li>
-					<li>
-						<details>
-							<summary>Parent 2</summary>
-							<ul className="p-2">
-								<li>
-									<a>Submenu 1</a>
-								</li>
-								<li>
-									<a>Submenu 2</a>
-								</li>
-							</ul>
-						</details>
-					</li>
-					<li>
-						<details>
-							<summary>Parent 3</summary>
-							<ul className="p-2">
-								<li>
-									<a>Submenu 1</a>
-								</li>
-								<li>
-									<a>Submenu 2</a>
-								</li>
-							</ul>
-						</details>
-					</li>
-					<li>
-						<details>
-							<summary>Parent 4</summary>
-							<ul className="p-2">
-								<li>
-									<a>Submenu 1</a>
-								</li>
-								<li>
-									<a>Submenu 2</a>
-								</li>
-							</ul>
-						</details>
-					</li>
-					<li>
-						<details>
-							<summary>Parent 5</summary>
-							<ul className="p-2">
-								<li>
-									<a>Submenu 1</a>
-								</li>
-								<li>
-									<a>Submenu 2</a>
-								</li>
-							</ul>
-						</details>
-					</li>
-					<li>
-						<details>
-							<summary>Parent 6</summary>
-							<ul className="p-2">
-								<li>
-									<a>Submenu 1</a>
-								</li>
-								<li>
-									<a>Submenu 2</a>
-								</li>
-							</ul>
-						</details>
-					</li>
-				</ul>
+				<div
+					className={`dropdown dropdown-hover ${
+						isHovered ? "hovered" : ""
+					}`}
+					onMouseEnter={() => setIsHovered(true)}
+					onMouseLeave={() => setIsHovered(false)}
+				>
+					<div
+						tabIndex={0}
+						role="button"
+						className="btn btn-ghost m-1"
+					>
+						Hover
+						{isHovered ? <ChevronUp /> : <ChevronDown />}
+					</div>
+					<ul
+						tabIndex={0}
+						className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+					>
+						<li>
+							<a>Item 1</a>
+						</li>
+						<li>
+							<a>Item 2</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div className="flex-none gap-2">
 				<div className="form-control">
-                    <input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" />
-                </div>
+					<input
+						type="text"
+						placeholder="Search"
+						className="input input-bordered w-full max-w-xs"
+					/>
+				</div>
 				{/* <AlgoliaSearch /> */}
 				<div className="dropdown">
 					<div tabIndex={0} role="button" className="btn m-1">
@@ -193,8 +156,8 @@ const Navbar = () => {
 					>
 						<div className="w-10 rounded-full">
 							<img
-								alt="Tailwind CSS Navbar component"
-								src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+								alt="user image"
+								src="/images/navbar/profile.png"
 							/>
 						</div>
 					</div>

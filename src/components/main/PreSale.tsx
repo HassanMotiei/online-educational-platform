@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay } from "swiper/modules";
 
-import PreSaleCard from "./PreSaleCard";
+import Card from "./Card";
 
 export default function PreSale() {
 	return (
@@ -43,31 +43,31 @@ export default function PreSale() {
 				modules={[Autoplay]}
 			>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 				<SwiperSlide>
-					<PreSaleCard />
+					<Card />
 				</SwiperSlide>
 			</Swiper>
 		</div>
